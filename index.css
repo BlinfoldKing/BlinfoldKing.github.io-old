@@ -1,4 +1,10 @@
+@font-face {
+  font-family: monaco;
+  src: url(typeface/monaco.ttf);
+}
+
 body{
+  font-family: monaco;
   background-color: #111;
   color: #fff;
 }
