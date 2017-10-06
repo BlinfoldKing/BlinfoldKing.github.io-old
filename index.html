@@ -17,6 +17,10 @@
 <script src="js/jquery-3.2.1.min.js"></script>
 
 <script>
+  $('.hidden').hide()
+  $(".G").hover(function(){
+      $('.hidden').slideToggle();
+  })
   $('.terminal').hide();
   $('.G').click(function(){
     $('.terminal').slideToggle();
