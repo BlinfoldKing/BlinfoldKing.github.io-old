@@ -5,24 +5,47 @@
 
 body{
   font-family: sans-serif;
-  background-color: #000;
-  color: #ccc;
+  background-color: #eee;
+  color: #000;
 }
 
-.hello{
-font-size: 150%;
+div.centered{
+font-size: 300%;
 align-items: center;
-padding-top: 25%;
+padding-top: 12.5%;
 padding-bottom:  0px;
+text-align: center;
+
 }
 
-em{
-  font-size: 100%;
-  font-family: monaco;
-  color: #009dff;
+.G:hover{
+  color:#008cff;
+
 }
 
-.hello h2 {
-  border-top: solid;
-  padding-top: 0px;
+strong{
+  border: solid;
+  padding: 10px;
+}
+
+.terminal{
+  height: 500px;
+  background-color: black;
+
+}
+
+.exit:hover{
+  color: red;
+}
+
+.G:hover + .exit{
+  display: none;
+}
+
+.hidden{
+  display:inherit;
+  font-size: 300%;
+  text-align: center;
+  font-family:monospace;
+  border: solid;
 }
