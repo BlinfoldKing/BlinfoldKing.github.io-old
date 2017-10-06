@@ -1,0 +1,28 @@
+@font-face {
+  font-family: monaco;
+  src: url(typeface/monaco.ttf);
+}
+
+body{
+  font-family: sans-serif;
+  background-color: #000;
+  color: #ccc;
+}
+
+.hello{
+font-size: 150%;
+align-items: center;
+padding-top: 25%;
+padding-bottom:  0px;
+}
+
+em{
+  font-size: 100%;
+  font-family: monaco;
+  color: #009dff;
+}
+
+.hello h2 {
+  border-top: solid;
+  padding-top: 0px;
+}
