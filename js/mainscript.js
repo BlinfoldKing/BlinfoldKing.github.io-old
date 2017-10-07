@@ -17,6 +17,13 @@ $("#Btn1").click(function(){
   $('#win1').show(300);
 
 })
+
+$("#term1").click(function(){
+
+  $('#win2').show(300);
+
+})
+
 $(function() {
     $( ".draggable" ).draggable();
   });

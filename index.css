@@ -71,7 +71,7 @@ strong{
   background-color: #eee;
 }
 
-#win1{
+.draggable{
   z-index: 10;
   width:400px;
   display:inherit;
