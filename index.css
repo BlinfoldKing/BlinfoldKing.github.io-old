@@ -71,9 +71,19 @@ strong{
   background-color: #eee;
 }
 
-.draggable{
+#win1{
   z-index: 10;
   width:400px;
+  display:inherit;
+  font-size: 300%;
+  text-align: center;
+  font-family:monospace;
+  border: solid;
+}
+
+#win2{
+  z-index: 10;
+  width:500px;
   display:inherit;
   font-size: 300%;
   text-align: center;
