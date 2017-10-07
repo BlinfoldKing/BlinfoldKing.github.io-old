@@ -2,31 +2,43 @@
 <html>
 <head>
   <link rel="stylesheet" href="index.css">
-
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
 </head>
 <body>
 
-  <div class="centered"><h1><strong  class="G centered" id="Btn1">{G}
-  </strong></h1></div>
 
-  <div class="hidden">
+
+  <div id="win1" class="draggable">
+    <div class="exit"> x </div>
     <div class="header">
-    Click to continue<div class="exit">x</div>
+    ganesha.exe
     </div>
-
     <div class="terminal">
       <ol>
-        <li>Bio.txt</li>
-        <li>MySkill.txt</li>
-        <li>XP.txt</li>
-        <li></li>
-        <li></li>
+        <li id="term1">Bio.txt</li>
+        <li id="term2">MySkill.txt</li>
+        <li id="term3">XP.txt</li>
       </ul>
     </div>
   </div>
 
-  <script src="js/jquery-3.2.1.min.js"></script>
+  <div class="centered"><h1><strong  class="G centered" id="Btn1">{G}
+  </strong></h1></div>
+
+  <div class="header hidden">
+  Click to boot
+  </div>
+
+  <script src="js/typed-min.js"></script>
   <script src="js/mainscript.js"></script>
+
 
 
 </body>

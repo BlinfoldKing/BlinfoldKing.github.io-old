@@ -1,35 +1,22 @@
 var toggleable = true;
 var termisopen = false;
 
-$('.hidden').hide()
+$('.hidden').hide();
+
 $(".G").hover(function(){
   if (toggleable) {
-    $('.hidden').slideToggle();
-
-
+    $('.hidden').toggle();
   }
-})
-$('.terminal').hide();
-$('.G').click(function(){
-  $('.terminal').slideToggle();
-  toggleable = !toggleable;
-  termisopen = !termisopen;
-  if(termisopen){
-    $('.header').html("ganesha.exe <div class='exit'>x</div>");
+});
 
-  }else {
-      $('.header').html("Click to continue <div class='exit'>x</div>");
-  }
-})
+$(".draggable").hide();
+$("#Btn1").click(function(){
 
-$('.exit').click(function(){
-  $('.terminal').slideToggle();
-  toggleable = !toggleable;
-  termisopen = false;
-  if(termisopen){
-    $('.header').html("ganesha.exe <div class='exit'>x</div>");
+  $('.hidden').slideUp();
+  $('.G').slideUp();
+  $('#win1').show(300);
 
-  }else {
-      $('.header').html("Click to continue <div class='exit'>x</div>");
-  }
 })
+$(function() {
+    $( ".draggable" ).draggable();
+  });
