@@ -83,8 +83,31 @@ strong{
 }
 
 #win2{
+  float: right;
   z-index: 10;
   width:500px;
+  display:inherit;
+  font-size: 300%;
+  text-align: center;
+  font-family:monospace;
+  border: solid;
+}
+
+#win3{
+  float: right;
+  z-index: 10;
+  width:600px;
+  display:inherit;
+  font-size: 300%;
+  text-align: center;
+  font-family:monospace;
+  border: solid;
+}
+
+#win4{
+  float: right;
+  z-index: 10;
+  width:1000px;
   display:inherit;
   font-size: 300%;
   text-align: center;

@@ -4,13 +4,15 @@
   <link rel="stylesheet" href="index.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.6/typed.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.js"></script>
 </head>
 <body>
 
 
 
   <div id="win1" class="draggable">
-    <div class="exit"> x </div>
+    <div class="exit" id="exit1"> x </div>
     <div class="header">
     ganesha.exe
     </div>
@@ -24,23 +26,38 @@
   </div>
 
   <div id="win2" class="draggable">
-    <div class="exit"> x </div>
+    <div class="exit" id="exit2"> x </div>
     <div class="header">
-    ganesha.exe
+    Bio.exe
     </div>
     <div class="terminal">
-      <ol>
 
-      </ul>
+    </div>
+  </div>
+
+  <div id="win3" class="draggable">
+    <div class="exit" id="exit3"> x </div>
+    <div class="header">
+    MySkill.exe
+    </div>
+    <div class="terminal">
+      <canvas id="mySkill" width="300" height="300"></canvas>
+    </div>
+  </div>
+
+  <div id="win4" class="draggable">
+    <div class="exit" id="exit4"> x </div>
+    <div class="header">
+    XP.exe
+    </div>
+    <div class="terminal">
+
     </div>
   </div>
 
   <div class="centered"><h1><strong  class="G centered" id="Btn1">{G}
   </strong></h1></div>
 
-  <div class="header hidden">
-  Click to boot
-  </div>
 
   <script src="js/typed-min.js"></script>
   <script src="js/mainscript.js"></script>
