@@ -12,10 +12,10 @@ $(".G").hover(function(){
 $(".draggable").hide();
 $("#Btn1").click(function(){
 
-  $('.hidden').slideUp();
+
   $('.G').slideUp();
   $('#win1').show(300);
-
+  
 })
 
 $("#term1").click(function(){
