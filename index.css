@@ -27,6 +27,17 @@ text-align: center;
 
 }
 
+.exit{
+  float: right;
+  padding-right: 10px;
+  color: red;
+}
+
+li:hover{
+  background-color: #ccc;
+  color: #000;
+}
+
 strong{
   border: solid;
   padding: 10px;
