@@ -3,11 +3,11 @@ var termisopen = false;
 
 $('.hidden').hide();
 
-$(".G").hover(function(){
+/*$(".G").hover(function(){
   if (toggleable) {
     $('.hidden').toggle();
   }
-});
+});*/
 
 $(".draggable").hide();
 $("#Btn1").click(function(){
@@ -15,7 +15,7 @@ $("#Btn1").click(function(){
 
   $('.G').slideUp();
   $('#win1').show(300);
-  
+
 })
 
 $("#term1").click(function(){
