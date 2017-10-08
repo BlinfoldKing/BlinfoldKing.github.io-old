@@ -3,12 +3,6 @@ var termisopen = false;
 
 $('.hidden').hide();
 
-/*$(".G").hover(function(){
-  if (toggleable) {
-    $('.hidden').toggle();
-  }
-});*/
-
 $(".draggable").hide();
 $("#Btn1").click(function(){
 
@@ -20,14 +14,17 @@ $("#Btn1").click(function(){
 
 $("#term1").click(function(){
   $('#win2').slideDown(300);
+  $('#win22').slideDown(300);
 })
 
 $("#term2").click(function(){
   $('#win3').slideDown(300);
+  $('#win32').slideDown(300);
 })
 
 $("#term3").click(function(){
   $('#win4').slideDown(300);
+
 })
 
 $("#exit1").click(function(){
@@ -45,6 +42,14 @@ $("#exit3").click(function(){
 
 $("#exit4").click(function(){
   $("#win4").slideUp(300);
+})
+
+$("#exit32").click(function(){
+  $("#win32").slideUp(300);
+})
+
+$("#exit22").click(function(){
+  $("#win22").slideUp(300);
 })
 
 $(function() {

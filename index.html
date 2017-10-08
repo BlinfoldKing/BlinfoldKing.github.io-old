@@ -18,9 +18,9 @@
     </div>
     <div class="terminal">
       <ol>
-        <li id="term1" class="pointer">Bio.txt</li>
-        <li id="term2" class="pointer">MySkill.txt</li>
-        <li id="term3" class="pointer">XP.txt</li>
+        <li id="term1" class="pointer">Bio.exe</li>
+        <li id="term2" class="pointer">MySkill.exe</li>
+        <li id="term3" class="pointer">XP.exe</li>
       </ol>
     </div>
   </div>
@@ -30,8 +30,37 @@
     <div class="header">
     Bio.exe
     </div>
-    <div class="terminal">
+    <div class="terminal small">
+      <ol>
+        <li>Nama : Ganesha Danu Enastika</li>
+        <li>Time/Place of Birth : Banda Aceh, 14th June 1999</li>
+        <li>Address : Dorm no. 1(Laag) 206, Telkom University Dormitory </li>
+        <li>Phone No. : 087714786445</li>
+        <li>email : ganeshadanu1@gmail.com</li>
+      </ol>
+    </div>
+  </div>
 
+  <div id="win22" class="draggable">
+    <div class="exit pointer" id="exit22"> &times; </div>
+    <div class="header">
+    EduHistory.exe
+    </div>
+    <div class="terminal small">
+        <ul>
+          <li>2005-2011</br>
+          SD Kartika I-2 Medan
+          </li>
+          <li>2011-2014</br>
+          SMP Kartika I-2 Medan
+          </li>
+          <li>2014-2017</br>
+          SMAN 2 Cianjur
+          </li>
+          <li>2017-Now </br>
+          Informatics Engineering,Telkom University
+          </li>
+        </ul>
     </div>
   </div>
 
@@ -42,6 +71,16 @@
     </div>
     <div class="terminal light">
       <canvas id="CodeSkill" width="600px" height="300px"></canvas>
+    </div>
+  </div>
+
+  <div id="win32" class="draggable">
+    <div class="exit pointer" id="exit32"> &times; </div>
+    <div class="header">
+    Tools.exe
+    </div>
+    <div class="terminal light">
+      <canvas id="Tools" width="600px" height="300px"></canvas>
     </div>
   </div>
 
@@ -63,32 +102,50 @@
   <script src="js/mainscript.js"></script>
   <script type="text/javascript">
     new Chart(document.getElementById("CodeSkill"), {
-      type: 'polarArea',
+      type: 'radar',
       data: {
         labels: ["C++", "C#", "Python","javascript","Pascal"],
         datasets: [{
             fill: true,
-            backgroundColor: [
-              'rgba(255, 0, 54, 0.02)',
-              'rgba(0, 163, 255, 0.2)',
-              'rgba(0, 255, 125, 0.2)',
-              'rgba(250, 255, 0, 0.2)',
-              'rgba(51, 0, 255, 0.2)'
-          ],
-            borderColor: [
-              'rgba(255, 0, 54, 1)',
-              'rgba(0, 163, 255,1)',
-              'rgba(0, 255, 125,1)',
-              'rgba(250, 255, 0,1)',
-              'rgba(51, 0, 255,1)',
-          ],
-          data: [85,80,40,85,95]
+            backgroundColor: 'rgba(0, 163, 255, 0.5)',
+            borderColor: 'rgba(0, 163, 255, 1)',
+
+          data: [4.5,3.6,2,3,5]
           }]
       },
       options: {
-        title: {
-          display: true,
-          text: 'Programming Language Experience'
+
+        scale :{
+          ticks: {
+            beginAtZero: true,
+            min: 0,
+            max: 5,
+            stepSize: 1
+          }
+        }
+      }
+    });
+
+    new Chart(document.getElementById("Tools"), {
+      type: 'radar',
+      data: {
+        labels: ["Unity3D", "3DBlender", "AfterEffect","Photoshop","jquery","html+css"],
+        datasets: [{
+            label:'Skills in tools and software',
+            fill: true,
+            backgroundColor: 'rgba(255, 0, 54, 0.5)',
+            borderColor: 'rgba(255, 0, 54, 1)',
+          data: [4,3.5,4,4.5,3,3.2]
+          }]
+      },
+      options: {
+        scale :{
+          ticks: {
+            beginAtZero: true,
+            min: 0,
+            max: 5,
+            stepSize: 1
+          }
         }
       }
     });
