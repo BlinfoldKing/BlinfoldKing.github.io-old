@@ -21,7 +21,7 @@
         <li id="term1" class="pointer">Bio.txt</li>
         <li id="term2" class="pointer">MySkill.txt</li>
         <li id="term3" class="pointer">XP.txt</li>
-      </ul>
+      </ol>
     </div>
   </div>
 
@@ -38,10 +38,10 @@
   <div id="win3" class="draggable">
     <div class="exit pointer" id="exit3"> &times; </div>
     <div class="header">
-    MySkill.exe
+    CodingSkill.exe
     </div>
-    <div class="terminal">
-      <canvas id="mySkill" width="300" height="300"></canvas>
+    <div class="terminal light">
+      <canvas id="CodeSkill" width="600px" height="300px"></canvas>
     </div>
   </div>
 
@@ -61,7 +61,40 @@
 
   <script src="js/typed-min.js"></script>
   <script src="js/mainscript.js"></script>
+  <script type="text/javascript">
+    new Chart(document.getElementById("CodeSkill"), {
+      type: 'polarArea',
+      data: {
+        labels: ["C++", "C#", "Python","javascript","Pascal"],
+        datasets: [{
+            fill: true,
+            backgroundColor: [
+              'rgba(255, 0, 54, 0.02)',
+              'rgba(0, 163, 255, 0.2)',
+              'rgba(0, 255, 125, 0.2)',
+              'rgba(250, 255, 0, 0.2)',
+              'rgba(51, 0, 255, 0.2)'
+          ],
+            borderColor: [
+              'rgba(255, 0, 54, 1)',
+              'rgba(0, 163, 255,1)',
+              'rgba(0, 255, 125,1)',
+              'rgba(250, 255, 0,1)',
+              'rgba(51, 0, 255,1)',
+          ],
+          data: [85,80,40,85,95]
+          }]
+      },
+      options: {
+        title: {
+          display: true,
+          text: 'Programming Language Experience'
+        }
+      }
+    });
 
+
+</script>
 
 
 </body>

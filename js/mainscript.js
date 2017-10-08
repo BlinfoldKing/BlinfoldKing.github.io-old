@@ -14,7 +14,7 @@ $("#Btn1").click(function(){
 
 
   $('.G').slideUp();
-  $('#win1').show(300);
+  $('#win1').slideDown(300);
 
 })
 
